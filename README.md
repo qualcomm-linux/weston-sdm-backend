@@ -56,3 +56,7 @@
 ## Status
 
 ✅ **Migration Complete** - All SDM 1.0 APIs replaced with SDM 2.0 APIs
+
+## License
+
+This project is licensed under the [LICENSE](LICENSE).

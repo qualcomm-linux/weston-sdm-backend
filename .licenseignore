@@ -3,3 +3,43 @@ external/**
 
 # Exclude GitHub workflows directory from license checks
 .github/workflows/**
+
+# Exclude upstream directories from license checks
+backend-drm/**
+backend-rdp/**
+color-lcms/**
+desktop/**
+perfetto/**
+renderer-vulkan/**
+renderer-gl/**
+shared/**
+
+# Exclude upstream top-level header files from license checks
+backend.h
+color-management.h
+color-operations.h
+color-properties.h
+color.h
+color-representation.h
+commit-timing.h
+config.h
+fifo.h
+id-number-allocator.h
+launcher-impl.h
+launcher-util.h
+libinput-device.h
+libinput-seat.h
+libweston-internal.h
+linux-dmabuf.h
+linux-explicit-synchronization.h
+linux-sync-file-uapi.h
+output-capture.h
+linux-sync-file.h
+pixel-formats.h
+pixman-renderer.h
+renderer-borders.h
+timeline.h
+vertex-clipping.h
+weston-log-internal.h
+weston-private.h
+weston.h
