@@ -30,8 +30,10 @@
 #include <core/layer_stack.h>
 #include <core/sdm_types.h>
 #include <utils/fence.h>
+#include <SnapHandle.h>
 
 namespace sdm {
+using vendor::qti::hardware::display::snapalloc::SnapHandle;
 
 class SDMDisplayDrawCycleIntf {
 public:
