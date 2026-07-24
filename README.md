@@ -1,5 +1,16 @@
 # SDM 2.0 Migration - Complete
 
+## Architecture Overview
+
+![Weston SDM Backend Architecture](weston-sdm-architecture.png)
+
+This diagram contrasts the standard **Upstream** display pipeline with Qualcomm's **Downstream** SDM-based display pipeline:
+
+- **Upstream Pipeline**: The Weston Compositor interacts with standard `libGBM` and the `DRM Backend`, which goes through standard `libDRM` to the kernel-space `DRM/KMS` subsystem.
+- **Downstream Pipeline (SDM)**: The Weston Compositor utilizes Qualcomm's `SDM Backend` and `SDM` layers (incorporating proprietary `SDM Prop` components and Qualcomm Open Source services) to perform composition, which then communicates with the kernel-space vendor DPU/panel drivers via `libDRM`.
+
+---
+
 ## SDM 1.0 to SDM 2.0 API Replacement
 
 ### Core Interfaces
